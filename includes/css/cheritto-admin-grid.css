@@ -1,0 +1,332 @@
+.cheritto-admin-grid-options-container {
+    margin-top:5px;
+}
+
+.cheritto-admin-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /*padding: 10px;*/
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 16px;
+    /*background-color: #E4E4E1;*/
+    background-color: transparent;
+    /*border-radius:20px;*/
+}
+
+/* THEMES */
+
+.cheritto-admin-grid-bg-none, .cheritto-admin-grid-bg-wordpress {
+    background: none;
+}
+
+.cheritto-admin-grid-bg-white, .cheritto-admin-grid-item-bg-ice, .cheritto-admin-grid-item-bg-sand, .cheritto-admin-grid-item-bg-wordpress,
+.cheritto-admin-grid-item-bg-marble, .cheritto-admin-grid-item-bg-spring, .cheritto-admin-grid-item-bg-calm-sea, .cheritto-admin-grid-item-bg-after-dawn,
+.cheritto-admin-grid-item-bg-elegance, .cheritto-admin-grid-item-bg-aqua, .cheritto-admin-grid-item-bg-snow
+{
+    background-color: White ;
+}
+
+.cheritto-admin-grid-bg-warm-flame {
+    background-image: linear-gradient(180deg, #ff9a9e 0%, #fad0c4 10%, #fad0c4 20%, #fff 30%, #fff 100%);
+}
+
+.cheritto-admin-grid-bg-night-fade {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.cheritto-admin-grid-bg-spring-warmth {
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+
+.cheritto-admin-grid-bg-heavy-rain {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.cheritto-admin-grid-bg-saint-petersburg, .cheritto-admin-grid-bg-ice {
+    background-image: linear-gradient(0deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.cheritto-admin-grid-bg-sand {
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+.cheritto-admin-grid-bg-marble {
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+}
+
+.cheritto-admin-grid-bg-lunar {
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+.cheritto-admin-grid-item-bg-lunar {
+    background: #C9CCD3;
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.50) 70%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten;
+}
+
+.cheritto-admin-grid-bg-spring {
+    background-image: linear-gradient(-45deg, #c1dfc4 10%, #deecdd 50%);
+}
+
+.cheritto-admin-grid-item-bg-glass {
+    background-image: linear-gradient(to bottom, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 55%, #e9e9e7 100%);
+}
+
+.cheritto-admin-grid-bg-calm-sea {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+.cheritto-admin-grid-bg-after-dawn {
+    background-image: linear-gradient(to bottom, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+.cheritto-admin-grid-bg-elegance {
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: screen;
+}
+
+.cheritto-admin-grid-bg-aqua {
+    background-color: #CDDCDC;
+    background-image: radial-gradient(at 50% 100%, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), linear-gradient(to bottom, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%);
+    background-blend-mode: screen, overlay;
+}
+
+.cheritto-admin-grid-bg-snow {
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+/* END THEMES */
+
+.cheritto-admin-grid-item {
+    
+    padding: 10px;
+    margin-top:16px;
+    margin-left:8px;
+    margin-right:8px;
+    /*background-color:white;*/
+    /*border-radius:10px;*/
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position:relative;
+
+}
+
+/* new in 1.1 */
+.cheritto-admin-grid-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.26) 0px 0px 20px;
+    margin-top: 6px;
+}
+/* endnew */ 
+
+.cheritto-admin-grid-item.first {
+    margin-left:0px;
+}
+
+.cheritto-admin-grid-item.last {
+    margin-right:0px;
+}
+
+.cheritto-admin-grid-item.cheritto-admin-grid-item-selected {
+    border:2px solid sandybrown;
+}
+
+.cheritto-admin-grid-item.cheritto-admin-grid-item-10-columns {
+    flex: 0 0 calc(calc(100% - 180px - 170px) / 10);
+}
+
+.cheritto-admin-grid-item.cheritto-admin-grid-item-9-columns {
+    flex: 0 0 calc(calc(100% - 180px - 132px) / 9);
+}
+
+.cheritto-admin-grid-item.cheritto-admin-grid-item-8-columns {
+    flex: 0 0 calc(calc(100% - 180px - 96px) / 8);
+}
+
+.cheritto-admin-grid-item.cheritto-admin-grid-item-7-columns {
+    flex: 0 0 calc(calc(100% - 180px - 60px) / 7);
+}
+
+.cheritto-admin-grid-item.cheritto-admin-grid-item-6-columns {
+    flex: 0 0 calc(calc(100% - 180px - 24px) / 6);
+}
+
+.cheritto-admin-grid-item.cheritto-admin-grid-item-5-columns {
+    flex: 0 0 calc(calc(100% - 170px) / 5);
+}
+
+.cheritto-admin-grid-item.cheritto-admin-grid-item-4-columns {
+    flex: 0 0 calc(calc(100% - 134px) / 4);
+}
+
+.cheritto-admin-grid-item.cheritto-admin-grid-item-3-columns {
+    flex: 0 0 calc(calc(100% - 98px) / 3);
+}
+
+.cheritto-admin-grid-item.cheritto-admin-grid-item-2-columns {
+    flex: 0 0 calc(calc(100% - 60px) / 2);
+}
+
+.cheritto-admin-grid-item.cheritto-admin-grid-item-1-columns {
+    flex: 0 0 calc(calc(100% - 20px) / 1);
+}
+
+.cheritto-admin-grid-item .cheritto-admin-grid-thumbnail {
+    height:12vw;
+    max-height:12vw;
+    overflow:hidden;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    /*border-radius:10px;*/
+}
+
+.cheritto-admin-grid-item .cheritto-admin-grid-item-line-limiter {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.cheritto-admin-grid-item .cheritto-admin-grid-item-line-limiter.limit-1 {
+    -webkit-line-clamp: 1;
+    height:1.4em;
+}
+
+.cheritto-admin-grid-item .cheritto-admin-grid-item-line-limiter.limit-2 {
+    -webkit-line-clamp: 2;
+    height:2.8em;
+}
+
+.cheritto-admin-grid-item .cheritto-admin-grid-item-line-limiter.limit-3 {
+    -webkit-line-clamp: 3;
+    height:4.2em;
+}
+
+.cheritto-admin-grid-item .cheritto-admin-grid-item-line-limiter.limit-4 {
+    -webkit-line-clamp: 4;
+    height:5.6em;
+}
+
+.cheritto-admin-grid-item .cheritto-admin-grid-item-line-limiter.limit-5 {
+    -webkit-line-clamp: 5;
+    height:7em;
+}
+
+.cheritto-admin-grid-item .post-com-count.post-com-count-pending.post-com-count-no-pending {
+    display: none;
+}
+
+.cheritto-admin-grid-item .post-com-count, .column-response .post-com-count {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cheritto-admin-grid-item .comment-count-approved, 
+.cheritto-admin-grid-item .comment-count-no-comments, 
+.cheritto-admin-grid-item .comment-count-approved, 
+.cheritto-admin-grid-item .comment-count-no-comments {
+    box-sizing: border-box;
+    display: block;
+    padding: 0 8px;
+    min-width: 24px;
+    height: 2em;
+    border-radius: 5px;
+    background-color: #646970;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.90909090;
+    text-align: center;
+}
+
+.cheritto-admin-grid-item .post-com-count-approved:after, 
+.cheritto-admin-grid-item .post-com-count-no-comments:after, 
+.cheritto-admin-grid-item .post-com-count-approved:after, 
+.cheritto-admin-grid-item .post-com-count-no-comments:after {
+    content: "";
+    display: block;
+    margin-left: 8px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #646970;
+    border-right: 5px solid transparent;
+}
+
+.cheritto-admin-grid-item .post-com-count-wrapper {
+    position: absolute;
+    top:20px;
+    right:20px;
+}
+
+/* new in 1.1 */
+.cheritto-admin-grid-item .post-com-count-pending {
+    position: relative;
+    left: -3px;
+    padding: 0 5px;
+    min-width: 7px;
+    height: 17px;
+    border: 1px solid #fff;
+    border-radius: 11px;
+    background: #d63638;
+    color: #fff;
+    font-size: 9px;
+    line-height: 1.88888888;
+    text-align: center;
+}
+/* endnew */
+
+.cheritto-admin-grid-item .cheritto-admin-grid-item-checkbox {
+    padding:2px;
+}
+
+.cheritto-admin-grid-item .no-comments {
+    display:none;
+}
+
+.cheritto-admin-grid-item .toggle-row {
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    display: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: 0;
+    background: 0 0;
+}
+
+.cheritto-admin-grid-item a {
+    color: #444;
+}
+
+.cheritto-admin-grid-modal .inline-editor {
+    background:#c3cfe2;
+    z-index:10;
+    margin: 150px calc(calc(50vw / 2) - 80px); 
+    position: relative;
+    display:block;
+    width:50%;
+}
+
+.cheritto-admin-grid-modal .inline-editor td {
+    padding:15px;
+}
+
+.cheritto-admin-grid-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9; 
+    left: 160px;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+
+.locked-indicator-icon:before {
+    margin-bottom: 10px;
+}
